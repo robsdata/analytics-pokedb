@@ -1,0 +1,19 @@
+# models/sources.yml
+
+version: 2
+
+sources:
+  - name: public # This is a logical name for the source schema
+    description: "Raw data loaded from the Pokemon CSV file via Python script."
+    database: postgres # The database name from your profiles.yml
+    schema: public # The actual schema in the data warehouse
+
+    tables:
+      - name: raw_pokemon
+        description: "Contains raw Pokémon stats, types, and other attributes. One row per Pokémon."
+        columns:
+          - name: pokedex_number
+            description: "The unique identifier for each Pokémon in the National Pokédex."
+            tests:
+              - unique
+              - not_null
