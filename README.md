@@ -1,4 +1,4 @@
-# 🚧 The Pokémon Combat Stats Lab: An Analytics Engineering Project 🚧
+# 🚧 The Pokémon Combat Stats Lab 🚧
 
 This repository contains a complete Analytics Engineering project designed to demonstrate key competencies in the modern data stack. The goal is to transform a raw Pokémon dataset into a reliable, tested, and analysis-ready data product, following software engineering best practices applied to data.
 
