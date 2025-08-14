@@ -1,0 +1,30 @@
+
+# models/staging/schema.yml
+
+version: 2
+
+models:
+  - name: stg_pokemon
+    description: "Staged Pokémon data, cleaned and standardized from the raw source. One row per Pokémon."
+    columns:
+      - name: pokedex_number
+        description: "The unique identifier for the Pokémon. This is the primary key."
+        tests:
+          - unique
+          - not_null
+
+      - name: primary_type
+        description: "The primary elemental type of the Pokémon."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['grass', 'fire', 'water', 'bug', 'normal', 'poison', 'electric', 'ground', 'fairy', 'fighting', 'psychic', 'rock', 'ghost', 'ice', 'dragon', 'dark', 'steel', 'flying']
+
+      # - name: health_points
+      #   description: "The base HP stat for the Pokémon."
+      #   tests:
+      #     - dbt_expectations.expect_column_values_to_be_between:
+      #         min_value: 1
+      #         # Note: This is a more advanced test from a package.
+      #         # For now, we are just illustrating the concept.
+      #         # A simpler built-in test would be a not_null test.
