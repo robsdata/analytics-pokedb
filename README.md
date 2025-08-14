@@ -1,4 +1,4 @@
-# 🚧 The Pokémon Combat Stats Lab 🚧
+# 🚧 The Pokemon Combat Stats Lab 🚧
 
 This repository contains a complete Analytics Engineering project designed to demonstrate key competencies in the modern data stack. The goal is to transform a raw Pokémon dataset into a reliable, tested, and analysis-ready data product, following software engineering best practices applied to data.
 
@@ -64,3 +64,14 @@ This project focuses on answering three key questions that demonstrate the abili
 - **Phase 2: Transformation** - Building dbt models and applying tests.
 - **Phase 3: Analysis** - Connecting Power BI and answering the MVP questions.
 - **Phase 4: Documentation** - Finalizing the README and generating dbt docs.
+
+---
+
+## 📊 Dashboard & Visualization
+
+The final output of this project is a Power BI dashboard that provides a visual summary of the key insights derived from the data marts.
+
+### Preview
+![Dashboard Preview](/dashboards/dashboard_preview.png)
+
+The interactive dashboard can be found in the `/dashboards` directory as `pokemon_analytics_overview.pbix`. It connects directly to the PostgreSQL data warehouse and visualizes the outputs of the dbt models.
