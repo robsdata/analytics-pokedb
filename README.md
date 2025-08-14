@@ -53,6 +53,7 @@ This project focuses on answering three key questions that demonstrate the abili
     - **`/staging`**: Models for cleaning and standardizing raw data.
     - **`/marts`**: Business-ready dimensional data models.
   - **`dbt_project.yml`**: Main dbt project configuration file.
+- **`/dashboard`**: Contains the data visualization file in Power BI (.pbix).
 - **`README.md`**: This documentation file.
 
 ---
